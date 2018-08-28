@@ -3,7 +3,98 @@
 body {
 	margin: 0;
 	/*add this line below*/
+	-webkit-font-smoothing: subpixel-antialiased;
 	overflow-x: hidden;
+}
+
+@keyframes hop-down {
+	0% {
+		transform: scale(.1) translateY(200px);
+	}
+
+
+	100% {
+		transform: scale(1) translateY(0px;);
+	}
+
+}
+
+.pop-up-layer {
+	opacity: 0%;
+	display: none; /*we will change this with javascript*/
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	background: rgba(44, 62, 80,.6); /*this is our overlay color*/
+	z-index: 100; /*makes our layer above the rest of the page.*/
+}
+
+.pop-up {
+	position: fixed; /*this makes our pop-up attached to the screen*/
+	top: 0; left: 0; right: 0; bottom: 0;
+	margin: auto; /*aligns our popup to the center*/
+	height: 15rem;
+	width: 40rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #2c3e50;
+	border-radius: 16px;
+	box-shadow: 0 4px 3px rgba(0,0,0,.3);
+	z-index: 10000000; /*Makes our pop-up above everything*/
+	animation: hop-down;
+	animation-duration: 100ms;
+	animation-fill-mode: both;
+	animation-timing-function: linear;
+}
+
+.pop-up-title {
+	position: absolute;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	top: 0;
+	left: 0;
+	background: white;
+	margin-top: 0;
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-weight: 300;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	font-family: roboto;
+}
+
+.pop-up-sub {
+	padding-top: 1rem;
+	text-align: center;
+	color: white;
+	font-weight: 300;
+	font-family: roboto;
+}
+
+.close-btn {
+	position: absolute;
+	top: 0;        /* we put this button at */
+	right: 0rem;    /* the top right */
+	margin-top: 0rem;
+	background: #e74c3c;
+	color: white;
+	border: none;
+	font-size: 20px;
+	transition: all 200ms;
+	cursor: pointer;
+	border-top-right-radius: 16px;
+	border-bottom-left-radius: 16px;
+	padding-left: 12px;
+	padding-bottom: 8px;
+	padding-top: 5px;
+	padding-right: 9px;
+}
+
+.close-btn:hover {
+	background: #c0392b;
 }
 
 /***********
@@ -25,6 +116,7 @@ NAVBAR
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+	font-family: roboto; /*made font-family roboto*/
 }
 
 .nav-btn {
@@ -47,8 +139,9 @@ NAVBAR
 	transform: scale(1.1) rotate(5deg) translateX(10px);
 }
 
+
 .nav-btn.right {
-	margin-left: 85%;
+	margin-left: 80%; /*made this smaller*/
 	transition: all 300ms;
 }
 
@@ -472,4 +565,153 @@ testimonials
 
 .dot:hover {
 	background: black;
+}
+
+/****************
+subscribe 3
+****************/
+
+.subscribe-3 {
+	height: 50vh;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+/**********
+faqpanel
+************/
+
+
+.faq {
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 2rem;
+}
+
+.faq h2 {
+	text-align: center;
+}
+
+.faq-container {
+	width: 60%;
+}
+
+
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+	font-weight: 600;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+	background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.faqpanel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/**************
+Footer
+**************/
+
+.footer {
+	height: 30vh;
+	margin: 0;
+	background: #34495e;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: roboto;
+}
+
+.container {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.footer-cta {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-cta p {
+	margin: 0;
+}
+
+h3 {
+	margin-top: 0;
+}
+
+.footer-links {
+	text-align: left;
+}
+
+.footer-links li {
+	list-style: none;
+}
+
+
+.footer-links a {
+	text-decoration: none;
+	color: white;
+	text-align: left;
+}
+
+.footer-copyright {
+	height: 5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #2c3e50;
+	color: white;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.more-links {
+	cursor: pointer;
 }
