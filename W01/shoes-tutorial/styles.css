@@ -2,7 +2,6 @@
 
 body {
 	margin: 0;
-	/*add this line below*/
 	-webkit-font-smoothing: subpixel-antialiased;
 	overflow-x: hidden;
 }
@@ -21,7 +20,7 @@ body {
 
 .pop-up-layer {
 	opacity: 0%;
-	display: none; /*we will change this with javascript*/
+	display: none; /*This is changed this with javascript*/
 	position: fixed;
 	height: 100vh;
 	width: 100%;
@@ -85,8 +84,8 @@ body {
 	font-size: 20px;
 	transition: all 200ms;
 	cursor: pointer;
-	border-top-right-radius: 16px;
-	border-bottom-left-radius: 16px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 6px;
 	padding-left: 12px;
 	padding-bottom: 8px;
 	padding-top: 5px;
@@ -362,8 +361,7 @@ gallery
 	grid-row-end: span 2;
 }
 
-.g-header
-{
+.g-header {
 	margin-left: 5px;
 	margin-right: 5px;
 	flex: 0 1 100%;
@@ -389,50 +387,54 @@ gallery
 	background-position: center;
 	color: white;
 }
-.a {
-	background: url('https://images.pexels.com/photos/266840/pexels-photo-266840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+.boot {
+	background-image: url('https://images.pexels.com/photos/266840/pexels-photo-266840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 
-.b {
-	background: url('https://images.pexels.com/photos/812875/pexels-photo-812875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+.street {
+	background-image: url('https://images.pexels.com/photos/812875/pexels-photo-812875.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 
-.c {
-	background: url('https://images.pexels.com/photos/421160/pexels-photo-421160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+.jog {
+	background-image: url('https://images.pexels.com/photos/421160/pexels-photo-421160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 	background-position: -70px;
 }
 
-.d {
-	background: url('https://images.pexels.com/photos/112285/pexels-photo-112285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+.flop {
+	background-image: url('https://images.pexels.com/photos/112285/pexels-photo-112285.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+
 }
 
-.e {
-	background: url('https://images.pexels.com/photos/293405/pexels-photo-293405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-}
-
-.f {
-	background: url('https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+.dress {
+	background-image: url('https://images.pexels.com/photos/293405/pexels-photo-293405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 	background-repeat: no-repeat;
-	background-position: -40px;
+	/*background-size: 400%;*/
+}
+
+.roll {
+	background-image: url('https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-repeat: no-repeat;
+	background-position: -200px;
 }
 
 
-.g {
-	background: url('https://images.pexels.com/photos/373964/pexels-photo-373964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-	background-position: -100px;
+.sneak {
+	background-image: url('https://images.pexels.com/photos/373964/pexels-photo-373964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: -200px;
 }
 
-.h {
-	background: url('https://images.pexels.com/photos/247203/pexels-photo-247203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+.edge {
+	background-image: url('https://images.pexels.com/photos/247203/pexels-photo-247203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 
-.i {
-	background: url('https://images.pexels.com/photos/40383/shoes-rock-climbing-hiking-walking-40383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+.camp {
+	background-image: url('https://images.pexels.com/photos/40383/shoes-rock-climbing-hiking-walking-40383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: 200px;
 }
 
-.j {
-	background: url('https://images.pexels.com/photos/116150/pexels-photo-116150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-	background-position: 0px-60px;
+.cheeta {
+	background-image: url('https://images.pexels.com/photos/116150/pexels-photo-116150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: 0;
 }
 
 .panel div {
@@ -445,7 +447,7 @@ gallery
 
 @supports (display: grid) {
 	.gallery > * {
-		margin: 0;
+		margin: 5px;
 	}
 }
 
@@ -465,6 +467,7 @@ subscribe 2
 	justify-content: center;
 	align-items: center;
 	color: white;
+	padding-bottom: 3rem;
 }
 
 /**********
@@ -476,6 +479,7 @@ testimonials
 	height: 80vh;
 	width: 100%;
 	background: #ecf0f1;
+	corner-radius: ;
 }
 
 .testi-title {
@@ -487,7 +491,7 @@ testimonials
 	position: absolute;
 	width: 300%;
 	display: flex;
-	transition: all 400ms;
+	transition: all 300ms;
 }
 
 .tests.first {
@@ -536,7 +540,7 @@ testimonials
 .testi-quote {
 	margin-top: 1rem;
 	border: solid 15px white;
-	border-radius: 2px;
+	border-radius: 10px;
 	background: white;
 }
 
@@ -583,6 +587,7 @@ subscribe 3
 	justify-content: center;
 	align-items: center;
 	color: white;
+	padding-bottom: 3rem;
 }
 
 /**********
@@ -596,7 +601,8 @@ faqpanel
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 2rem;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
 }
 
 .faq h2 {
