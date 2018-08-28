@@ -104,8 +104,8 @@ NAVBAR
 .nav-bar {
 	z-index: 10;
 	width: 100%;
-	background: black;
-	border: 1px solid red;
+	/*background: black;*/
+	/*border: 1px solid red;*/
 }
 
 .nav-links {
@@ -127,9 +127,9 @@ NAVBAR
 	transition: all 200ms;
 }
 
-.nav-btn:hover {
-	transform: scale(1.1);
-}
+/*.nav-btn:hover {*/
+	/*transform: scale(1.1);*/
+/*}*/
 
 .nav-btn.logo {
 	transition: all 300ms;
