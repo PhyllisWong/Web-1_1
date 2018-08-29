@@ -32,48 +32,75 @@
  - Name should only contain letters and numbers
  
  -->
-<h1>Burger King</h1>
+<!DOCTYPE html>
+	<html>
+	
+	<h1>Who Are You?</h1>
+	
+	<form>
+		<p>
+			<label>Prefix</label>
+			<select name="prefix">
+				<option>Mr</option>
+				<option>Mrs</option>
+				<option>Ms</option>
+				<option>Sir</option>
+				<option>Madam</option>
+				<option>Dr</option>
+				<option>None</option>
+			</select>
+			<label>Name</label>
+			<input name="name">
+		</p>
+		
+		<p>
+			<label>Email</label>
+			<input name="email">
+		</p>
+		
+		<p>
+			<label>Pet Count</label>
+			<input name="pets">
+		</p>
+		
+		<p>
+			<label>Birthday</label>
+			<input week="birthday">
+		</p>
+	
+		
+		<ul>
+			<li>
+				<input id="radio-admin" type="radio" name="role" value="Admin" />
+				<label for="radio-admin">Admin</label>
+			</li>
+			<li>
+				<input id="radio-editor" type="radio" name="role" value="Editor" />
+				<label for="radio-editor">Editor</label>
+			</li>
+			<li>
+				<input id="radio-contributor" type="radio" name="role" value="Contributor" />
+				<label for="radio-contributor">Contributor</label>
+			</li>
+		</ul>
+		
+		<p>
+			<input type="checkbox" name="public">
+			<label>Public Bio</label>
+			<p>
+				<textarea name="bio"></textarea>
+			</p>
+		</p>
+	
+		<p>
+			<label>Upload Image</label>
+			<input name="image" type="file">
+		</p>
 
-<form>
-	<label>Name</label>
-	<input name="name">
-	
-	<label>Email</label>
-	<input name="email">
-	
-	<label>Pet Count</label>
-	<input name="pets">
-	
-	<label>Birthday</label>
-	<input name="birthday">
-	
-	<select name="prefix">
-		<option>Mr</option>
-		<option>Mrs</option>
-		<option>Ms</option>
-		<option>Sir</option>
-		<option>Madam</option>
-		<option>Dr</option>
-		<option>None</option>
-	</select>
-	
-	<input id="radio-admin" type="radio" name="role" value="Admin" />
-	<label for="radio-admin">Admin</label>
-	<input id="radio-editor" type="radio" name="role" value="Editor" />
-	<label for="radio-editor">Editor</label>
-	<input id="radio-contributor" type="radio" name="role" value="Contributor" />
-	<label for="radio-contributor">Contributor</label>
-	
-	<input type="checkbox" name="public">
-	<label>Public Bio</label>
-	
-	<textarea name="bio"></textarea>
-	
-	<label>Upload Image</label>
-	<input name="image" type="file">
-	
-	<label>Self Destruct</label>
-	<input name="self-destruct" type="check">
-	
-	<button type="submit">Submit</button>
-</form>
+		
+		<label>Self Destruct</label>
+		<input name="self-destruct" type="check">
+		
+		<button type="submit">Submit</button>
+	</form>
+</html>
