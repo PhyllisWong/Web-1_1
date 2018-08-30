@@ -1,14 +1,14 @@
 /////////popup//////////////
 
 //declare default vars
-const popUp = document.getElementById('pop-up');
+// const popUp = document.getElementById('pop-up');
 const popUpLayer = document.getElementById('pop-up-layer');
 const closeModal = document.getElementById('close-pop-up');
 
 //nav-bar button
 const subBtn = document.getElementById('sub-btn');
 
-//navbar button click makes the popup appear
+//nav-bar button click makes the popup appear
 subBtn.addEventListener("click", () => {
 	popUpLayer.style.display = 'flex';
 })
