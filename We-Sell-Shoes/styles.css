@@ -135,7 +135,10 @@ NAVBAR
 
 
 .nav-btn.right {
-	margin-left: 80%; /*made this smaller*/
+	/* absolute relative to the page or container */
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
 	transition: all 300ms;
 }
 
@@ -412,19 +415,20 @@ gallery
 .roll {
 	background-image: url('https://images.pexels.com/photos/1994/red-vintage-shoes-sport.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 	background-repeat: no-repeat;
-	background-position: -150px;
+	background-position: absolute;
   background-size: cover;
 }
 
 
 .sneak {
 	background-image: url('https://images.pexels.com/photos/373964/pexels-photo-373964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-	background-position: -200px;
+	background-position: absolute;
   background-size: cover;
 }
 
 .edge {
 	background-image: url('https://images.pexels.com/photos/247203/pexels-photo-247203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: absolute;
   background-size: cover;
 }
 
