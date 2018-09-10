@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS BoxModel</title>
+  </head>
+
+  <body>
+  <div class="container">
+    <div class="heading">
+      <h1>Who Are You?</h1>
+      <legend>Fill in the details of your profile</legend>
+    </div>
+      <form>
+
+          <div class="box">
+
+          <p>
+            <label>Prefix</label>
+            <select name="prefix">
+              <option>Dude</option>
+              <option>None</option>
+              <option>Mr</option>
+              <option>Mrs</option>
+              <option>Ms</option>
+              <option>Sir</option>
+              <option>Madam</option>
+              <option>Dr</option>
+            </select>
+
+            <label>Name</label>
+            <input name="name">
+          </p>
+
+          <p>
+            <label>Email</label>
+            <input name="email">
+          </p>
+
+          <p>
+            <label>Pet Count</label>
+            <input name="pets">
+          </p>
+
+          <p>
+            <label>Birthday</label>
+            <input name="birthday">
+          </p>
+
+      </div>
+
+        <ul>
+          <li>
+            <input id="radio-admin" type="radio" name="role" value="Admin" />
+            <label for="radio-admin">Admin</label>
+          </li>
+          <li>
+            <input id="radio-editor" type="radio" name="role" value="Editor" />
+            <label for="radio-editor">Editor</label>
+          </li>
+          <li>
+            <input id="radio-contributor" type="radio" name="role" value="Contributor" checked/>
+            <label for="radio-contributor">Contributor</label>
+          </li>
+        </ul>
+
+        <p>
+          <input type="checkbox" name="public" checked>
+          <label>Public Bio</label>
+        <p>
+          <textarea name="bio"></textarea>
+        </p>
+        </p>
+
+        <p>
+          <label>Upload Image</label>
+          <input name="image" type="file">
+        </p>
+
+        <label>Self Destruct</label>
+        <input name="self-destruct" type="check">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  </html>
+
+<style>
+
+  .container {
+    width: 600px;
+    margin: auto;
+    padding: 2rem;
+    border: 2px solid cornflowerblue;
+    border-radius: 1rem;
+  }
+
+  h1 {
+    margin-top: -10px;
+    text-align: center;
+  }
+
+
+</style>
