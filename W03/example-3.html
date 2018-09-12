@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+  <div class="container">
+    <p>
+      <div class="title-input">
+        <label class="input-label" for="amount">Bill</label>
+        <input id="amount" type="number" value="0.00">
+      </div>
+    </p>
+
+  <p>
+    <div class="title-input">
+      <label class="input-label" for="percent">Tip %</label>
+      <input id="percent" type="number" value="15">
+    </div>
+  </p>
+
+    <p class="input">
+      <button id="calculate">Calculate</button>
+    </p>
+
+    <p class="result">
+      <span>Tip:</span>
+      <span id="tip">0.00</span>
+    </p>
+
+
+
+    <p class="result">
+      <span>Total:</span>
+      <span id="total">0.00</span>
+    </p>
+
+  </div>
+
+</body>
+</html>
+
+
+<style>
+
+  body, html {
+    /*align-content: center;*/
+    height: 400px;
+  }
+
+  .container {
+    width: 400px;
+    height: 100%;
+    margin: auto;
+  }
+
+  .title-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input-label {
+    font-size: 10px;
+  }
+
+  .input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  button {
+    text-align: center;
+  }
+
+  input {
+    height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+
+</style>
