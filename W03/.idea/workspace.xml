@@ -18,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/example-1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="34" />
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -26,8 +26,17 @@
       <file leaf-file-name="example-3.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example-3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+            <state relative-caret-position="60">
+              <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="603">
+              <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -57,6 +66,7 @@
         <option value="$PROJECT_DIR$/challenge3.html" />
         <option value="$PROJECT_DIR$/example-1.html" />
         <option value="$PROJECT_DIR$/example-2.html" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/example-3.html" />
       </list>
     </option>
@@ -88,6 +98,11 @@
             <path>
               <item name="W03" type="b2602c69:ProjectViewProjectNode" />
               <item name="W03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="W03" type="b2602c69:ProjectViewProjectNode" />
+              <item name="W03" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -125,12 +140,12 @@
       <updated>1536612097469</updated>
       <workItem from="1536612099246" duration="4630000" />
       <workItem from="1536682617134" duration="347000" />
-      <workItem from="1536784212518" duration="5028000" />
+      <workItem from="1536784212518" duration="5553000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10005000" />
+    <option name="totallyTimeSpent" value="10530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1237" height="777" extended-state="6" />
@@ -258,7 +273,7 @@
     <entry file="file://$PROJECT_DIR$/example-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="34" />
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -269,10 +284,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="64" column="1" selection-start-line="64" selection-start-column="1" selection-end-line="64" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/example-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="55" column="24" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        <state relative-caret-position="60">
+          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
