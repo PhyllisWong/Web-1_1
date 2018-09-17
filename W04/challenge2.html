@@ -1,0 +1,72 @@
+<!--
+   This example used named areas to place elements
+   on the grid
+ -->
+
+<h1>Challenge 2</h1>
+
+<!-- Grid Container -->
+<div class="container">
+
+  <div class="box a"></div>
+  <div class="box b"></div>
+  <div class="box c"></div>
+  <div class="box d"></div>
+
+</div>
+
+
+<style>
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 10px 10px;
+    width: 500px;
+    height: 1rem;
+    margin: auto;
+
+    /* repeat 1fr 4 times */
+    grid-template-columns: repeat(5, 1fr);
+
+    /* The named areas below define where elements with
+    those names are placed on the grid. */
+    grid-template-areas:  "a a a a"
+                          "b c c c"
+                          "d d d d";
+  }
+
+  /* Some default styles to get you started */
+
+  .box {
+    min-height: 100px;
+  }
+
+  .a {
+    background-color: #d45353;
+    grid-area: a;
+  }
+
+  .b {
+    background-color: #eae55e;
+    grid-area: b;
+    height: 300px;
+  }
+
+  .c {
+    background-color: #65d451;
+    grid-area: c;
+    height: 300px;
+  }
+
+  .d {
+    background-color: #86b9f5;
+    grid-area: d;
+  }
+
+</style>

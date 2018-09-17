@@ -17,17 +17,35 @@
       <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="36" column="24" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="216">
+              <caret line="36" column="24" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="36" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="challenge1.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/challenge1.html">
+      <file leaf-file-name="challenge2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/challenge2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+            <state relative-caret-position="185">
+              <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="challenge3.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/challenge3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="67" column="40" lean-forward="true" selection-start-line="56" selection-start-column="4" selection-end-line="67" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -40,6 +58,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index3.html" />
         <option value="$PROJECT_DIR$/challenge1.html" />
+        <option value="$PROJECT_DIR$/challenge2.html" />
+        <option value="$PROJECT_DIR$/challenge3.html" />
       </list>
     </option>
   </component>
@@ -105,12 +125,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537218796663</updated>
-      <workItem from="1537218799552" duration="1747000" />
+      <workItem from="1537218799552" duration="4466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1747000" />
+    <option name="totallyTimeSpent" value="4466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1237" height="527" extended-state="0" />
@@ -149,24 +169,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index3.html">
+    <entry file="file://$PROJECT_DIR$/challenge1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="217">
+          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="36" column="24" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="216">
+          <caret line="36" column="24" lean-forward="true" selection-start-line="29" selection-start-column="4" selection-end-line="36" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/challenge1.html">
+    <entry file="file://$PROJECT_DIR$/index3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state relative-caret-position="248">
+          <caret line="67" column="40" lean-forward="true" selection-start-line="56" selection-start-column="4" selection-end-line="67" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenge2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challenge3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
         </state>
       </provider>
     </entry>

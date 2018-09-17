@@ -1,0 +1,81 @@
+<!--
+   This example used named areas to place elements
+   on the grid
+ -->
+
+<h1>Challenge 3</h1>
+
+<!-- Grid Container -->
+<div class="container">
+
+  <div class="box a"></div>
+  <div class="box b"></div>
+  <div class="box c"></div>
+  <div class="box d"></div>
+  <div class="box e"></div>
+
+</div>
+
+
+<style>
+
+  /* Your styles here */
+
+  h1 {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 20px 20px;
+    width: 500px;
+    height: 1rem;
+    margin: auto;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  "a a a"
+                          "b c c"
+                          "b d d"
+                          "e e e";
+  }
+
+
+
+
+  /* Some default styles to get you started */
+
+  .box {
+    min-height: 100px;
+  }
+
+  .a {
+    background-color: #d45353;
+    grid-area: a;
+  }
+
+  .b {
+    background-color: #eae55e;
+    grid-area: b;
+    height: 320px;
+  }
+
+  .c {
+    background-color: #65d451;
+    grid-area: c;
+    height: 200px;
+  }
+
+  .d {
+    background-color: #86b9f5;
+    grid-area: d;
+    height: 100px;
+  }
+
+  .e {
+    background-color: #cf86f5;
+    grid-area: e;
+  }
+
+</style>
