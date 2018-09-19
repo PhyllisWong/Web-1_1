@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body, html {
+	/*align-content: center;*/
+	height: 400px;
+	font-family: roboto;
+}
+
+.container {
+	max-width: 300px;
+	height: 100%;
+	margin: auto;
+	padding: 0 1rem 6rem 1rem;
+	background-color: gainsboro;
+	border-radius: 1rem;
+	border: 1px solid grey;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+}
+
+.title-input {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+}
+
+.result {
+	padding: 0 1rem 0 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	font-size: 32px;
+}
+
+.input-label {
+
+	font-size: 10px;
+	padding-bottom: 4px;
+}
+
+.input {
+	padding-top: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.total {
+	padding-bottom: 20px;
+}
+
+button {
+	margin-top: 5px;
+	text-align: center;
+	height: 50px;
+	border-radius: 5px;
+	border: 0 solid none;
+	font-size: large;
+	background-color: #28a745;
+}
+
+input {
+	height: 50px;
+	border-radius: 4px;
+	/*border: 1px solid none;*/
+	border: 0px solid grey;
+	text-align: center;
+	font-size: 24px;
+}

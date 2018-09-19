@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <script>
+    // Scripts loaded here won't have access to elements later in the document
+    // MOVE to bottom of the body element
+    // const titleElement = document.getElementById('title');
+    // titleElement.innerHTML = 'Hello World';
+    // titleElement.style.color = '#dd2255';
+  </script>
+</head>
+<body>
+
+<!-- This element can not be accessed until it has been loaded -->
+<h1 id="title">Foo Bar</h1> <!--  innerHTML must be set after the element loads  -->
+
+<!-- Scripts -->
+<script>
+  // These scripts run after everything above has been loaded.
+  const titleElement = document.getElementById('title');
+  titleElement.innerHTML = 'Hello World';
+  titleElement.style.color = '#dd2255';
+  titleElement.addEventListener('click', function() {titleElement.innerHTML = 'Say whaaaaaa?????'})
+</script>
+</body>
+
+</html>
