@@ -1,15 +1,23 @@
 // Your scripts here
 const container = document.getElementById('container');
 
+
+
 let str = '';
 
-for (var i = 0; i < data.length; i += 1) {
+for (let i = 0; i < data.length; i += 1) {
   const alien = data[i];
   // console.log(alien);
-  str += `<div class="">${alien.name}</div>`;
+  str += `<div class="alien-card">
+    <h1 class="alien-name">${alien.name}</h1>
+    <p class="alien-health">Health: ${alien.health}</p>
+    <img class="alien-img" src="${alien.image}" alt="${alien.image}">
+</div>`;
 }
 
 container.innerHTML = str;
+
+
 
 /* 
 
