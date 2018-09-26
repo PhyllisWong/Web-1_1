@@ -1,0 +1,115 @@
+<div id="main">
+
+</div>
+
+
+<script src="data.js"></script>
+<script>
+  // -----------------------------------------
+  // Define an Object with Class Syntax
+
+  // Challenge 5) Look at the user data in data.js.
+  // Add properties here for each property found
+  // the objects in data.
+
+  // Stretch goal: Automate the process of adding
+  // properties with a loop...
+
+  // {
+  //   "id": 2,
+  //   "prefix": "Dr",
+  //   "first_name": "Cassaundra",
+  //   "last_name": "Bortoli",
+  //   "email": "cbortoli1@usgs.gov",
+  //   "rating": 66.8375,
+  //   "high_score": 404720,
+  //   "date": "2017-06-09 04:18:01",
+  //   "image": "https://robohash.org/quisquamoptioporro.bmp?size=50x50&set=set1"
+  // },
+
+  class User {
+    constructor(id, prefix, first_name, last_name, email, rating, high_score, date, image) {
+      this.id = id;
+      this.prefix = prefix;
+      this.first = first_name;
+      this.last = last_name;
+      this.email = email;
+      this.rating = rating;
+      this.score = high_score;
+      this.date = new Date(date);
+      this.imageUrl = image;
+    }
+
+    describe() {
+      return `${this.first} ${this.last} ${this.score} ${this.imageUrl}`;
+    }
+
+    toHTMLString() {
+      const name = `${this.prefix} ${this.first} ${this.last}`
+      let htmlStr = `<p><strong>${name}</strong> ${this.rating} ${this.score}</p>`;
+      return htmlStr;
+    }
+
+    // makeImgTag() {
+    //   let imgUrl = `${this.image}`;
+    //   return `<img src=`${imgUrl}`>`;
+    // }
+  }
+
+  const player = new User(1, 'na', 'Asim', 'Do0d', 'e@email.com', 3.9, 999, '2017-04-02 13:03:57', 'https://ae01.alicdn.com/kf/HTB1Jxm0QXXXXXaKXVXXq6xXFXXXf/2017-Wall-Sticker-Decal-children-room-Gaming-Gamer-Joystick-Video-Computer-Game-Home-Decor-Wallpaper-Wall.jpg_640x640.jpg')
+  console.log(player.describe());
+  console.log(player.toHTMLString());
+  // console.log(player.image.makeImgTag());
+
+  // Challenge 7) Add a method to the class above
+  // that generates an HTML string and returns it.
+  // Call it toHTMLString().
+  // This HTML string should show the users name,
+  // rating and high score. You can format it with
+  // html tags.
+
+  // this.id = id;
+  // this.prefix = prefix;
+  // this.first = first_name;
+  // this.last = last_name;
+  // this.email = email;
+  // this.rating = rating;
+  // this.score = high_score;
+  // this.date = new Date(date);
+  // this.imageUrl = image;
+
+
+
+
+
+  // ----------------------------------------
+
+  // This gets the main element
+  const main = document.getElementById('main');
+
+  // 0. create an array to hold each user
+
+  const users = [];
+
+  // 1. iterate through the data array
+  for (let i in data) {
+    // 2. create a variable to hold each obj at index place
+    let user = data[i];
+
+    const {id, prefix, first_name, last_name, email, rating, high_score, date, image} = user;
+    users.push(new User(id, prefix, first_name, last_name, email, rating, high_score, date, image));
+  };
+
+  // 3. const obj {all the properties} = data[i]
+  // users.push(new User(pass in all the params));
+
+  // Challenge 8)
+  // Loop through all of the User Objects and
+
+  for (let i in users) {
+    document.getElementById('main').innerHTML += users[i].toHTMLString();
+  }
+  // display them in the browser by calling their
+  // toHTMLString() method.
+
+</script>

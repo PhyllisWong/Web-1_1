@@ -1,5 +1,12 @@
 # Front End Web Notes
 
+Wed Sept 26
+## JavaScript Class Objects and Prototype
+Prototypes are how JavaScript handles inheritence.
+
+<br>
+<br>
+
 
 Wed Sept 24
 ## JavaScript Arrays, Objects, and Loops
