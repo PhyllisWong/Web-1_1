@@ -1,6 +1,27 @@
 <div id="main">
 
 </div>
+<style>
+
+  .aliens {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    margin: 2rem;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .aliens h1 {
+    color: black;
+  }
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
+</style>
 
 
 <script src="data.js"></script>
@@ -15,17 +36,6 @@
   // Stretch goal: Automate the process of adding
   // properties with a loop...
 
-  // {
-  //   "id": 2,
-  //   "prefix": "Dr",
-  //   "first_name": "Cassaundra",
-  //   "last_name": "Bortoli",
-  //   "email": "cbortoli1@usgs.gov",
-  //   "rating": 66.8375,
-  //   "high_score": 404720,
-  //   "date": "2017-06-09 04:18:01",
-  //   "image": "https://robohash.org/quisquamoptioporro.bmp?size=50x50&set=set1"
-  // },
 
   class User {
     constructor(id, prefix, first_name, last_name, email, rating, high_score, date, image) {
@@ -37,16 +47,20 @@
       this.rating = rating;
       this.score = high_score;
       this.date = new Date(date);
-      this.imageUrl = image;
+      this.image = image;
     }
 
     describe() {
-      return `${this.first} ${this.last} ${this.score} ${this.imageUrl}`;
+      return `${this.first} ${this.last} ${this.score} ${this.image}`;
     }
 
     toHTMLString() {
       const name = `${this.prefix} ${this.first} ${this.last}`
-      let htmlStr = `<p><strong>${name}</strong> ${this.rating} ${this.score}</p>`;
+      let htmlStr = `<div class="aliens">
+                        <h1>${name}</h1>
+                        <p>Rating: ${this.rating}</p> <p> High Score: ${this.score}</p>
+                        <img src="${this.image}">
+                     </div>`;
       return htmlStr;
     }
 
@@ -67,20 +81,6 @@
   // This HTML string should show the users name,
   // rating and high score. You can format it with
   // html tags.
-
-  // this.id = id;
-  // this.prefix = prefix;
-  // this.first = first_name;
-  // this.last = last_name;
-  // this.email = email;
-  // this.rating = rating;
-  // this.score = high_score;
-  // this.date = new Date(date);
-  // this.imageUrl = image;
-
-
-
-
 
   // ----------------------------------------
 
