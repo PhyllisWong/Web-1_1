@@ -1,8 +1,47 @@
 # Front End Web Notes
 
+Wed Oct 1
+## JavaScript API
+Modern browsers are very sophisticated applications that are almost capable  of running full 
+applications.
+
+## Learning Objectives
+1. Name and identify JS APIs in the browser
+1. Explore and identify upcoming technologies available in the browser
+1. Measure browser support for any feature
+
+# Initial Exercise
+1. Explore browser APIs
+
+
+## In Class Activity I
+* Discussion
+	* What are the limitations of applications that run in a web browser?
+	* What are the advantages of applications that run in a web browser?
+
+
+## After Class
+My goal is to make a project that *tests* one of the browser APIs. This project should be *small*.
+
+**NOTE!** You should choose a browser API not a web service. Your API should be something provided by
+the browser. **FOR example:** Canvas is okay, Yelp is not.
+
+1. Use at least 3 features of the browser.
+1. Don't use a service.
+1. Check out Web Assembly
+1. Include a README.md
+1. Github Repo
+1. Add notes on the features that are supported by each browser
+1. Make a medium article about my opinion about the features we chose
+ 
+ 
+
+
+<br>
+<br>
 Wed Sept 26
 ## JavaScript Class Objects and Prototype
-Prototypes are how JavaScript handles inheritence.
+Prototypes are how JavaScript handles inheritance.
 
 <br>
 <br>
