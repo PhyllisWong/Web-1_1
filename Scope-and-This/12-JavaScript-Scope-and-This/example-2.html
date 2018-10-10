@@ -1,9 +1,12 @@
-
+<!-- // ** Challenge! -->
  <div class="container">
-  <div class="box" data-name="One"><span>Option 1</span></div>
-  <div class="box" data-name="Two"><span>Option 2</span></div>
-  <div class="box" data-name="Three"><span>Option 3</span></div>
-  <div class="box selected" data-name="Four"><span>Option 4</span></div>
+   <div class="box" data-name="One"><span>Option 1</span></div>
+   <div class="box" data-name="Two"><span>Option 2</span></div>
+   <div class="box" data-name="Three"><span>Option 3</span></div>
+   <div class="box selected" data-name="Four"><span>Option 4</span></div>
+   <!-- // 1) Add another box or two each with their own label and data. -->
+   <div class="box" data-name="Five"><span>Option 5</span></div>
+   <div class="box" data-name="Six"><span>Option 6</span></div>
 </div>
 
 <h1 id="display">??</h1>
@@ -50,8 +53,9 @@
   
   const display = document.getElementById('display');
   const options = document.getElementsByClassName('box');
-  
-  for (var i in options) {
+  // console.log(`Here: ${options}`);
+
+  for (let i in options) {
     options[i].onclick = function(e) {
       this.classList.toggle('selected');
       const name = this.dataset.name; // <-- dataset gives all the data attributes
@@ -60,10 +64,14 @@
       display.dataset.name = name;
     }
   }
+
+  function clearBtns() {
+    options.forEach(function(e){
+      e.classList.remove('selected');
+    });
+  }
   
-  // ** Challenge!
-  
-  // 1) Add another box or two each with their own label and data. 
+
   
   // 2) Only one of the boxes should show as selected. 
   // When a new box is selected remove selected from 
