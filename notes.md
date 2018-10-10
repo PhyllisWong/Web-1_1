@@ -1,5 +1,27 @@
 # Front End Web Notes
 
+Tues Oct 9
+# Final Exam Study
+### HTML
+1. What are the attributes for the tag
+1. html element
+1. Keep it semantic
+
+### CSS
+1. nth child
+1. star selector
+1. Study the selectors
+1. Flexbox - container
+1. CSS Grid: display: grid, grid template areas, 1fr, 1fr, 1fr
+
+### JavaScript
+1. scope: var: function scope, let: block scope const: block scope
+1. hoisting
+1. within all the script tags, each variable is available to all tags
+1. forEach to iterate through an array of nodes
+1. 
+
+
 Wed Oct 1
 ## JavaScript API
 Modern browsers are very sophisticated applications that are almost capable  of running full 

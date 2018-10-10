@@ -54,7 +54,7 @@
   for (var i in options) {
     options[i].onclick = function(e) {
       this.classList.toggle('selected');
-      const name = this.dataset.name;
+      const name = this.dataset.name; // <-- dataset gives all the data attributes
       console.log(name);
       display.innerHTML = name;
       display.dataset.name = name;

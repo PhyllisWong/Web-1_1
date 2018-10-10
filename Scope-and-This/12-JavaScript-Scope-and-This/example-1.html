@@ -12,7 +12,7 @@
 </div>
 
 <div>
-  <h1 id="choice">???</h1>
+  <h1 id="choice">Chocolate Chip</h1>
   <select id="choose">
     <option>Chocolate Chip</option>
     <option>Snickerdoodle</option>
@@ -75,6 +75,8 @@
   const titleInput = document.getElementById('title-input');
   const choice = document.getElementById('choice');
   const chooseSelector = document.getElementById('choose');
+
+
   
   titleInput.onfocus = function(e) {
     console.log(this, "has focus!"); // means the keyboard has focus, you can see the cursor
@@ -87,10 +89,10 @@
   titleInput.oninput = function(e) {
     console.log(this.value);
     title.innerHTML = this.value;
-  }
+  };
 
-  chooseSelector.oninput = function(e) {
-    console.log(this.value);
+  chooseSelector.onchange = function(e) {
+    // console.log(this.value);
     choice.innerHTML = this.value;
   }
   
