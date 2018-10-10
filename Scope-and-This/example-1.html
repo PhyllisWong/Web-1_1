@@ -40,14 +40,24 @@
 
 
 <script>
-  const options = document.getElementsByClassName('box');
-  for (var i in options) {
-    options[i].onclick = function(e) {
+  const boxList = document.getElementsByClassName('box');
+
+  for (let i = 0; i < boxList.length; i++) {
+    clearBoxes();
+    boxList[i].onclick = function(e) {
       this.classList.toggle('selected');
     }
   }
-  
+
+
+  function clearBoxes() {
+    boxList.forEach(function(e){
+      e.classList.remove('selected');
+    });
+  }
   // ** 1) Challenge 
-  // Add more boxes. 
+  // Add more boxes.
+
+
 </script>
 

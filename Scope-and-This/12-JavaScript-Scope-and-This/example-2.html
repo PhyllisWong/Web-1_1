@@ -52,11 +52,12 @@
 <script>
   
   const display = document.getElementById('display');
-  const options = document.getElementsByClassName('box');
+  const options = Array.from(document.getElementsByClassName('box'));
   // console.log(`Here: ${options}`);
 
   for (let i in options) {
     options[i].onclick = function(e) {
+      clearBtns();
       this.classList.toggle('selected');
       const name = this.dataset.name; // <-- dataset gives all the data attributes
       console.log(name);
@@ -66,8 +67,8 @@
   }
 
   function clearBtns() {
-    options.forEach(function(e){
-      e.classList.remove('selected');
+    options.forEach(function(option) {
+      option.classList.remove('selected');
     });
   }
   
