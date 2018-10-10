@@ -26,9 +26,9 @@ billElement.style.color = 'black';
 // Add an event listener to button_1
 calculateButton.onclick = (elem) => {
   const bill = Number(billElement.value);
-  let tipPercent = tipElement.value * 0.01;
+  const tipPercent = tipElement.value * 0.01;
 
-  let tip = (tipPercent * bill).toFixed(2);
+  const tip = (tipPercent * bill).toFixed(2);
   tipTotal.innerHTML = tip;
 
   console.log("tip is a: " + typeof tip)
@@ -36,7 +36,7 @@ calculateButton.onclick = (elem) => {
   console.log(typeof Number(tip) + " tip")
   console.log(typeof Number(bill) + " bill")
 
-  let grandTotal = (Number(tip) + bill);
+  const grandTotal = (Number(tip) + bill);
   console.log(grandTotal);
   total.innerHTML = Number(grandTotal).toFixed(2);
 };
