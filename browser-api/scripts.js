@@ -7,7 +7,7 @@ console.log("YOLO");
 // };
 
 function success(pos) {
-  let coord = pos.coords;
+  const coord = pos.coords;
 
   console.log('Your current position is:');
   console.log(`Latitude : ${coord.latitude}`);
